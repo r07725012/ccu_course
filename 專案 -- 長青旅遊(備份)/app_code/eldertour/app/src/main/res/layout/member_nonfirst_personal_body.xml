@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:id="@+id/physical_test_LinearLayout">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.06"
+        android:id="@+id/physical_test_title_LinearLayout">
+
+        <TextView
+            android:text=" 讓我們了解您的身體狀況"
+            android:textSize="30sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/physical_test_title_textView"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_weight="0.42"
+        android:id="@+id/physical_test_disease_LinearLayout">
+
+        <TextView
+            android:text="一、是否有以下病症?"
+            android:textSize="28sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/physical_test_disease_textView"
+            android:layout_weight="0.12" />
+
+        <CheckBox
+            android:text="心臟病"
+            android:textSize="26sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/physical_test_heart_disease_checkBox"
+            android:layout_weight="0.12" />
+
+        <CheckBox
+            android:text="痛風"
+            android:textSize="26sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/physical_test_gout_checkBox"
+            android:layout_weight="0.12"/>
+
+        <CheckBox
+            android:text="高血壓"
+            android:textSize="26sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/physical_test_hypertension_checkBox"
+            android:layout_weight="0.12"/>
+
+        <CheckBox
+            android:text="糖尿病"
+            android:textSize="26sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/physical_test_diabetes_checkBox"
+            android:layout_weight="0.12"/>
+
+        <CheckBox
+            android:text="氣喘"
+            android:textSize="26sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/physical_test_asthma_checkBox"
+            android:layout_weight="0.12"/>
+
+        <CheckBox
+            android:text="無"
+            android:textSize="26sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/physical_test_no_checkBox"
+            android:layout_weight="0.12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:id="@+id/physical_test_move_LinearLayout"
+        android:layout_weight="0.45">
+
+        <TextView
+            android:text="二、是否行動不便?"
+            android:textSize="28sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/physical_test_move_textView"
+            android:layout_weight="0.05"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.12"
+            android:id="@+id/physical_test_move_RadioGroup">
+
+            <RadioButton
+                android:text="是"
+                android:textSize="26sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/physical_test_yes_move_radioButton"
+                android:layout_weight="0.12"/>
+
+            <RadioButton
+                android:text="否"
+                android:textSize="26sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/physical_test_no_move_radioButton"
+                android:layout_weight="0.12"/>
+
+        </RadioGroup>
+
+        <Button
+            android:text="送出"
+            android:textSize="26sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/physical_test_submit_button"
+            android:layout_weight="0.12"/>
+
+    </LinearLayout>
+
+</LinearLayout>

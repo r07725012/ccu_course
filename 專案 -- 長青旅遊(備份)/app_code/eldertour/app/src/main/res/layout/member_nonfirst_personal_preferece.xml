@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:id="@+id/test_LinearLayout">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.38"
+        android:id="@+id/test_LinearLayout_days">
+
+        <TextView
+            android:text="出發「半盲旅」使用者測驗"
+            android:layout_width="match_parent"
+            android:id="@+id/test_title_textView"
+            android:textSize="30sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05" />
+
+        <TextView
+            android:text="一、預想行程天數?"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/test__expected_trip_days_textView"
+            android:textSize="28sp"
+            android:layout_weight="0.03" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.07"
+            android:id="@+id/test__expected_trip_days_RadioGroup">
+
+            <RadioButton
+                android:text="一日遊"
+                android:textSize="24sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/test_one_day_trip_radioButton"
+                android:layout_weight="1.2" />
+
+            <RadioButton
+                android:text="兩天一夜"
+                android:textSize="24sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/test_two_days_trip_radioButton2"
+                android:layout_weight="1.2" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.55"
+        android:id="@+id/test_LinearLayout_type">
+
+        <TextView
+            android:text="二、最想要的旅遊類型為?"
+            android:textSize="28sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/test_wanted_trip_type_textView"
+            android:layout_weight="0.03" />
+
+        <CheckBox
+            android:text="懷舊之旅"
+            android:textSize="24sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/test_old_trip_checkBox"
+            android:layout_weight="0.07" />
+
+        <CheckBox
+            android:text="芬多精之旅"
+            android:textSize="24sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/test_forest_trip_checkBox"
+            android:layout_weight="0.07" />
+
+        <CheckBox
+            android:text="美拍之旅"
+            android:textSize="24sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/test_take_pictures_trip_checkBox"
+            android:layout_weight="0.07" />
+
+        <CheckBox
+            android:text="體驗之旅"
+            android:textSize="24sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/test_experience_trip_checkBox"
+            android:layout_weight="0.07" />
+
+        <Button
+            android:text="送出"
+            android:textSize="24sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/test_submit_button"
+            android:layout_weight="0.07" />
+
+    </LinearLayout>
+
+</LinearLayout>

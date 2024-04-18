@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.user.eldertour">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Suit" />
+        <activity android:name=".SuitItemDetail" />
+        <activity android:name=".MySuit" />
+        <activity android:name=".MySuitItems"/>
+        <activity android:name=".Memory" />
+        <activity android:name=".MemoryCamera" />
+        <activity android:name=".MemoryFilmMaker" />
+        <activity android:name=".Member" />
+        <activity android:name=".MemberFirstLogin" />
+        <activity android:name=".MemberFirstBecoming" />
+        <activity android:name=".MemberNonFirst" />
+        <activity android:name=".MemberNonFirstInfoModifying" />
+        <activity android:name=".MemberNonFirstPersonal" />
+        <activity android:name=".MemberNonFirstPersonalBody" />
+        <activity android:name=".MemberNonFirstCondition" />
+
+        <activity android:name=".MyPoint" />
+
+    </application>
+
+</manifest>

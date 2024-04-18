@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:id="@+id/mypoint_LinearLayout">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="148dp"
+        android:weightSum="1"
+        android:background="#50C878"
+        android:id="@+id/mypoint_LinearLayout1">
+
+        <TextView
+            android:text="我的點數"
+            android:textColor="@android:color/white"
+            android:textSize="40dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mypoint_textView"
+            android:layout_weight="0.52" />
+
+        <TextView
+            android:text="0"
+            android:textColor="@android:color/white"
+            android:textSize="40dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/points_textView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:weightSum="1"
+        android:background="#FFFFF0"
+        android:id="@+id/mypoint_LinearLayout2">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:layout_weight="0.04">
+
+            <ImageView
+                android:layout_width="43dp"
+                android:layout_height="75dp"
+                app:srcCompat="@drawable/cart"
+                android:id="@+id/commend_imageView"
+                android:baselineAlignBottom="false"
+                android:layout_gravity="bottom" />
+        </LinearLayout>
+
+        <TextView
+            android:text="推薦"
+            android:gravity="center"
+            android:textSize="32dp"
+            android:layout_width="wrap_content"
+            android:layout_height="73dp"
+            android:id="@+id/commend_textView"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:background="#FFFFF0"
+        android:id="@+id/mypoint_LinearLayout3">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="101dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                app:srcCompat="@drawable/bitcoin"
+                android:id="@+id/coin_imageView"
+                android:layout_weight="0.07" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="178dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:weightSum="1">
+
+            <TextView
+                android:text="全家"
+                android:textSize="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/family_textView"
+                android:layout_weight="0.05" />
+
+            <TextView
+                android:text="任意商品折10元"
+                android:textSize="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/discount10_textView" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="77dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:weightSum="1">
+
+            <TextView
+                android:text="25 點"
+                android:textSize="30dp"
+                android:textColor="@android:color/holo_orange_dark"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/need_points_textView"
+                android:layout_weight="0.22" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

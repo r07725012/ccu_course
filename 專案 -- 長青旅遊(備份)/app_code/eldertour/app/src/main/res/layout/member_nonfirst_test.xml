@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/test_LinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF009688"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.38">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.38">
+
+            <LinearLayout
+                android:id="@+id/test_LinearLayout_days"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0.38"
+                android:background="#D3D3D3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/test_title_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.05"
+                    android:background="#D3D3D3"
+                    android:text="出發「半盲旅」使用者測驗"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textSize="26sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/test_LinearLayout_type"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0.38"
+                android:background="#D3D3D3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/test_wanted_trip_type_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.03"
+                    android:background="@android:color/darker_gray"
+                    android:text="一、最想要的旅遊類型為?"
+                    android:textSize="26sp" />
+
+                <CheckBox
+                    android:id="@+id/test_wen_chuang_checkBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.07"
+                    android:background="@android:color/white"
+                    android:text="文創小店"
+                    android:textSize="24sp" />
+
+                <CheckBox
+                    android:id="@+id/test_clture_checkBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.07"
+                    android:background="@android:color/white"
+                    android:text="文化名勝"
+                    android:textSize="24sp" />
+
+                <CheckBox
+                    android:id="@+id/test_view_checkBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.07"
+                    android:background="@android:color/white"
+                    android:text="景色觀光"
+                    android:textSize="24sp" />
+
+                <CheckBox
+                    android:id="@+id/test_food_checkBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.07"
+                    android:background="@android:color/white"
+                    android:text="美食小吃"
+                    android:textSize="24sp" />
+
+                <CheckBox
+                    android:id="@+id/test_experience_checkBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.07"
+                    android:background="@android:color/white"
+                    android:text="體驗娛樂"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.38"
+                android:background="#D3D3D3"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/physical_test_LinearLayout_disease">
+
+                <TextView
+                    android:id="@+id/physical_test_disease_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.12"
+                    android:text="二、是否有以下病症?"
+                    android:textSize="26sp"
+                    android:background="@android:color/darker_gray"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp" />
+
+                <CheckBox
+                    android:id="@+id/physical_test_heart_disease_checkBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.12"
+                    android:text="心臟病"
+                    android:textSize="24sp"
+                    android:background="@android:color/white"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+                <CheckBox
+                    android:id="@+id/physical_test_gout_checkBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.12"
+                    android:text="痛風"
+                    android:textSize="24sp"
+                    android:background="@android:color/white"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+                <CheckBox
+                    android:id="@+id/physical_test_hypertension_checkBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.12"
+                    android:text="高血壓"
+                    android:textSize="24sp"
+                    android:background="@android:color/white"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+                <CheckBox
+                    android:id="@+id/physical_test_diabetes_checkBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.12"
+                    android:text="糖尿病"
+                    android:textSize="24sp"
+                    android:background="@android:color/white"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+                <CheckBox
+                    android:id="@+id/physical_test_asthma_checkBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.12"
+                    android:text="氣喘"
+                    android:textSize="24sp"
+                    android:background="@android:color/white"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+                <CheckBox
+                    android:id="@+id/physical_test_no_checkBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.12"
+                    android:text="無"
+                    android:textSize="24sp"
+                    android:background="@android:color/white"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.38"
+                android:background="#D3D3D3"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/physical_test_LinearLayout_move">
+
+                <TextView
+                    android:id="@+id/physical_test_move_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.05"
+                    android:text="三、是否行動不便?"
+                    android:textSize="26sp"
+                    android:background="@android:color/darker_gray"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp" />
+
+                <RadioGroup
+                    android:id="@+id/physical_test_move_RadioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.05">
+
+                    <RadioButton
+                        android:id="@+id/physical_test_yes_move_radioButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.12"
+                        android:text="是"
+                        android:textSize="24sp"
+                        android:background="@android:color/white"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp" />
+
+                    <RadioButton
+                        android:id="@+id/physical_test_no_move_radioButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.12"
+                        android:text="否"
+                        android:textSize="24sp"
+                        android:background="@android:color/white"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp" />
+
+                    <Button
+                        android:id="@+id/test_submit_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/buttonshape_orange"
+                        android:text="送出"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20dp"
+                        android:layout_weight="0.12"
+                        android:layout_marginBottom="10dp" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

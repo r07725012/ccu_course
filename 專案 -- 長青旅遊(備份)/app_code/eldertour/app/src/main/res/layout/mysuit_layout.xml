@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_page_mysuit_LinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.user.eldertour.MySuit"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:id="@+id/mysuit_LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="116dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/mysuit_LinearLayout2"
+            android:layout_width="113dp"
+            android:layout_height="107dp"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="136dp"
+                android:layout_height="91dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="0.02"
+                android:cropToPadding="false"
+                app:srcCompat="@drawable/station" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mysuit_LinearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="108dp"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="9:00"
+                android:textColor="#FF027D71"
+                android:textSize="26dp" />
+
+            <TextView
+                android:id="@+id/place_name_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="阿里山火車站"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:textSize="26dp" />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/logo_icon_imageView"
+            android:layout_width="63dp"
+            android:layout_height="39dp"
+            app:srcCompat="@drawable/logo_icon" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1.00"
+            android:text="約 30 分鐘"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/navigation_button"
+            android:layout_width="87dp"
+
+            android:layout_height="34dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttonshape"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:text="導航"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+    </LinearLayout>
+</LinearLayout>

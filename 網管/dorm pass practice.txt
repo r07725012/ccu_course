@@ -1,0 +1,23 @@
+SWITCH
+	cat$PWD|./<N4
+	cat$PWD|./<N4
+	cat$PWD|./<N4
+	cat$PWD|./<N4
+	cat$PWD|./<N4
+	cat$PWD|./<N4
+
+
+ROUTER
+	FRANkioHWxup6
+	FRANkioHWxup6
+	FRANkioHWxup6	
+	FRANkioHWxup6
+	FRAMkioHWxup6
+
+ROUTER EN
+	5.u2l4J#!(~@@
+	5.u2l4J#!(~@@
+	5.u2l4J#!(~@@
+	5.u2l4J#!(~@@
+	5.u2l4J#!(~@@
+	5.u2l4J#!(~@@

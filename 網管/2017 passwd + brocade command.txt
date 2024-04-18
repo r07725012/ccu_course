@@ -1,0 +1,99 @@
+switch： !Ido42k7 (波ㄎㄟˋ的)
+router： v587A<!!
+en ： xl3gj3cjo4CBB
+
+密版 #5418 brocade cmd
+
+項目名稱                   Brocade
+
+顯示狀態
+
+  Configuration              show run
+                             show run int e1/1/X
+
+  Log                        show log
+                             show log | include 1/1/X ([,\) ]|$)   or ([,\. ])
+
+  Interfaces status          show int brief
+                             show errdisable summary --> bpdu guard 
+                             show link-error-disable --> 卡號錯，link-flap
+
+  Iput error                 show int eX/X/X
+
+  Accest list                show access-list all   =   show ip access-list
+
+			     show access-list named-acl u2710b (only search for u2710b)	
+
+  Mac address table          show mac-address
+
+  Spanning tree              show span
+  
+  Snooping binding table     show ip dhcp snooping info
+
+  門禁 IP 檢測               show arp
+
+  測線 			     phy  cable-diagnosition tdr [port]
+
+			     show cable... 同上
+設定項目
+
+  Configure thru terminal    configure terminal
+
+  PORT                       interface ethernet 1/1/x
+
+以下指令皆設定在該PORT
+
+  Interface shutdown         disable
+
+  Mac address limit          port security
+                             maximum 2
+                             violation restrict(產生violation值-->紀錄並丟棄)
+                             secure-mac-address AAAA.AAAA.AAAA VVV(vlan)
+                             secure-mac-address BBBB.BBBB.BBBB VVV
+                             enable
+
+  Err-disable: link-flap     link-error-disable 8 10 0 (cisco default 5 10 0)
+
+  Err-disable: BPDU Guard    stp-bpdu-guard
+
+  Port base access list      ip access-group XXXXX in
+
+  source guard               source-guard enable
+
+  DHCP option 82 circuit-id  dhcp snooping relay information subscriber-id XXXX
+
+  Dynamic arp inspection     ip arp inspection vlan VVV
+
+清除資料
+
+  clear counter		     clear statistics ethernet 1/1/x
+
+  clear dhcp snooping db     clear dhcp [ip]
+
+自動化設定
+
+  store config               write mem
+
+  
+[虛擬資料] ： u5566
+
+[網卡問題 or 網卡被刪除] 
+
+   控制台->硬體和音效->裝置管理員->對網路介面卡點右鍵 再按下"掃描硬體變更"
+
+[網路不穩(會斷線又恢復)]
+
+1. 用 netsh 來將 TCP/IP 堆疊重新設訂回其原始狀態：
+
+	netsh interface ip reset
+
+2. 防火牆出問題，程式改寫 winsock
+
+	netsh winsock reset
+
+[測線] 			     
+   
+   phy  cable-diagnosition tdr [port]
+
+   show cable... 同上
+
