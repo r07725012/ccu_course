@@ -1,0 +1,42 @@
+本校教師赴國外出席國際會議：
+
+1.新增 -> 開始時間 > 結束時間
+2.管理按扭
+3.無刪除功能
+4.The conf name field is required.
+
+
+5.驗證是否錯誤--blade.php
+  @if($errors->has('name'))
+              <p class="text-danger">{{$errors->first('name')}}</p>
+
+6.有錯誤不許進資料庫--controller
+  $this->validate($request,[
+            'college'=>'required|max:11',
+            'dept'=>'required|max:11',
+            'name'=>'required|max:50',
+            'profLevel'=>'required|max:11',
+            'nation'=>'required|max:20',
+            'startDate'=>'required',
+            'endDate'=>'required',
+            'comments'=>'max:500',
+            ]);
+7.{{dump($errors)}} in blade.php
+顯示錯誤訊息
+
+[test]
+1.日期爆炸
+2.edit 加 errors
+   @if($errors->has("nation"))
+   <p class="text-danger">{{$errors->first('nation')}}</p>
+	@endif
+3.國際合作交流計畫
+少 "計畫內容" projcontent
+4.國際化活動
+少 "備註"
+
+
+
+
+
+
