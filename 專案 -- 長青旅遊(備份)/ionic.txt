@@ -1,0 +1,14 @@
+/*建專案*/
+ionic start 專案名稱 tab(預設)/blank/... --版本
+
+
+/*在瀏覽器看結果*/
+ionic serve	不會建檔
+ionic run android/ios	會建檔
+
+
+/*建檔*/
+ionic build android/ios
+
+/*模擬器*/
+ionic emulate	要先裝ios的開發檔案p.s.應該不會用到
